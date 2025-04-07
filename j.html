@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+   .stage {
+top: 150px;
+font-size: 40px;
+text-align: center;
+left: 0px;
+top: 0px;
+width: 90%;
+height: 800px;
+background: #ddd;
+border-style: solid;
+border-width: 5px;
+border-color: black;
+overflow: hidden;
+margin-left: auto;
+margin-right: auto;
+}
+
+.force {
+background:  #ddd;
+margin-left: 10px;
+margin-top: -20px;
+width: 240px;
+height: 400px;
+margin-top: 160px;
+
+animation: geeks 17.7s infinite;
+}
+@keyframes geeks {
+0% {
+margin-left: 35%;
+}
+5.88% {margin-left: 35%;
+}
+
+23.53% {margin-left: 90%;
+}
+
+24.53% {margin-left: 90%;
+}
+
+41.18% {margin-left: 50%;
+}
+
+88.35% {
+margin-left: 50%;
+}
+
+99.9999% {
+margin-left: 90%;
+}
+
+100% {
+margin-left: 90%;
+}
+}
+
+.head {
+
+  background: white;
+width: 50%;
+height: 25%;
+margin: auto;
+border-radius: 50%;
+   translate: -50% 100%;
+  
+}
+ .wayoutside1 {
+  width: 80px;
+   translate: 25% 10%;
+}
+.outside1 {
+  display: inline-block;
+   height: 30px;
+    width: 30px;
+  clip-path: circle(50% at 50% 50%);
+   
+}
+
+.box31 {
+  background: white;
+ 
+  margin-left: 1px;
+   clip-path: ellipse(25% 40% at 50% 50%);
+   animation: geeks1 1s infinite;
+            animation-play-state: paused;
+  margin-top: -2px;
+ animation-play-state: running;
+ 
+  
+}
+.box21 {
+  height: 15px;
+  line-height: 15px;  
+}
+.box1 {
+  position: relative;
+    width: 30px;
+  top:15px;
+   height: 15px;
+        font-size: 40px;
+         text-align: center;
+   left: 0px;
+             top:0px;
+              width: 500px;
+                 background:burlywood;
+            
+  border-style: solid;
+  border-width: 5px;
+  border-color: black;
+  overflow: hidden;
+}
+           @keyframes geeks1 {
+           0% {
+ margin-left: 5px; margin-top: -2px; width:7px; height: 7px; background: black; }
+          
+ 2% {
+ margin-left: 17px;  margin-top: 0px; width: 8px; height: 8px; clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);}
+         
+ 35% {
+  margin-left: 19px; margin-top: -2px; width: 8px; height: 8px;clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);}
+             
+                 100% {
+ margin-left: 21px; margin-top: -2px;  width: 8px; height: 8px;background: black;   }
+        }
+
+.body {
+background: black;
+width: 50%;
+height: 200px;
+margin: auto;
+border-radius: 50%;
+  clip-path: circle(50% at 50% 50%);
+  animation: geeks3 17s infinite;
+}
+@keyframes geeks3{
+0% {
+margin-left: 0%;
+}
+
+50% {
+margin-left: 0%;
+}
+
+100% {
+margin-left: 0%;}
+}
+
+.arm {
+  height: 30px;
+  width: 130px;
+  background-color: #555;
+  position: relative;
+  margin-right: 30px ; 
+ transform: rotate(90deg);
+  border-radius: 50px 50px; 
+    translate: -65% 420%;
+  animation: geeks4 17.7s infinite;
+  background-color: red;
+  transform: rotate(60);
+  transition: transform 0.5s ease;  
+}
+@keyframes geeks4 {
+  0% {
+margin-left: 0%;
+}
+
+41% {
+margin-left: 0%;
+}
+
+41.18% {
+  transform-origin: 0px 0px;
+  transform: rotate(180deg); 
+ 
+}
+
+50% {
+margin-left: 0%;
+}
+
+100% {
+margin-left: 0%;}
+}
+
+.arm1 {
+  height: 30px;
+  width: 130px;
+  background-color: #555;
+  position: relative;
+  margin-left: 30px; 
+ transform: rotate(90deg);
+  translate: 55% 350%;
+  border-radius: 50px 50px; 
+  animation: geeks5 17s infinite;
+  background-color: red;
+}
+@keyframes geeks5 {
+0% {
+margin-left: 0%;
+}
+
+50% {
+margin-left: 0%;
+}
+
+100% {
+margin-left: 0%;}
+}
+  	
+.leg {
+  height: 30px;
+  width: 140px;
+  background-color: #555;
+  position: relative;
+  margin-right: 0px ; 
+ transform: rotate(90deg);
+  border-radius: 50px 50px; 
+    translate: -40% 60%;
+  animation: geeks6 17s infinite;
+}
+@keyframes geeks6 {
+0% {
+margin-left: 0%;
+}
+
+50% {
+margin-left: 0%;
+}
+
+100% {
+margin-left: 0%;}
+}
+
+.leg1 {
+  height: 30px;
+  width: 140px;
+  background-color: #555;
+  position: relative;
+  margin-left: 30px; 
+ transform: rotate(90deg);
+  translate: 0% -10%;
+  border-radius: 50px 50px; 
+  animation: geek7 17s infinite;
+}
+ @keyframes geeks7 {
+0% {
+margin-left: 0%;
+}
+
+50% {
+margin-left: 0%;
+}
+
+100% {
+margin-left: 0%;}
+}
+
+
+
+</style>
+</head>
+<body>
+  <div class="stage">
+    <video width="320" height="240" controls onloadeddata="true" autoplay loop>
+      <source src="hi.mp4/IMG_6310.mp4" type="video/mp4"></video>
+    <div class="force">
+    <div class="head"><div class="wayoutside1">
+      <div class="outside1">
+        <div class="box21"></div>
+        <div class="box1">
+         <div class="box31">
+        </div>
+        </div>
+      </div>
+          <div class="outside1">
+        <div class="box21"></div>
+        <div class="box1">
+         <div class="box31">
+          </div>
+        </div>
+      </div>
+    </div></div> 
+      
+    <div class="arm"></div>
+      <div class="arm1"></div>
+    <div class="body"></div>
+    <div class="leg"></div>
+      <div class="leg1"></div>
+      </div>
+    </div>
+</body>
+</html>
