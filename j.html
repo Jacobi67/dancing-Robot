@@ -30,7 +30,7 @@ width: 240px;
 height: 400px;
 margin-top: 160px;
 
-animation: geeks 17.7s infinite;
+animation: geeks 17.13s infinite;
 }
 @keyframes geeks {
 0% {
@@ -137,7 +137,7 @@ height: 200px;
 margin: auto;
 border-radius: 50%;
   clip-path: circle(50% at 50% 50%);
-  animation: geeks3 17s infinite;
+  animation: geeks3 17.13s infinite;
 }
 @keyframes geeks3{
 0% {
@@ -158,35 +158,61 @@ margin-left: 0%;}
   background-color: #555;
   position: relative;
   margin-right: 30px ; 
- transform: rotate(90deg);
   border-radius: 50px 50px; 
-    translate: -65% 420%;
-  animation: geeks4 17.7s infinite;
+    translate: 0% 300%;
+  animation: geeks4 17.17s infinite;
   background-color: red;
-  transform: rotate(60);
-  transition: transform 0.5s ease;  
+ 
+  transform: rotate(360);
+  transform-origin: 0px 0px;
+  transition: transform 5s ease; 
+
+ 
+ 
 }
 @keyframes geeks4 {
   0% {
-margin-left: 0%;
+
+     
+    transform: rotate(90deg); 
 }
 
 41% {
-margin-left: 0%;
+ 
+  
+  transform: rotate(90deg); 
 }
 
 41.18% {
+
+  transform: rotate(90deg); 
+ 
+}
+
+42.681260946% {
   transform-origin: 0px 0px;
   transform: rotate(180deg); 
  
 }
 
+42.323409224% {
+ 
+  transform: rotate(100deg); 
+}
 50% {
-margin-left: 0%;
+  transform: rotate(-80deg); 
 }
 
+60% {
+  transform: rotate(6000deg); 
+}
+
+70% {
+  transform: rotate(6000deg); 
+}
 100% {
-margin-left: 0%;}
+  transform: rotate(90deg); 
+}
 }
 
 .arm1 {
@@ -196,22 +222,54 @@ margin-left: 0%;}
   position: relative;
   margin-left: 30px; 
  transform: rotate(90deg);
-  translate: 55% 350%;
+  translate: 90% 200%;
   border-radius: 50px 50px; 
-  animation: geeks5 17s infinite;
+  animation: geeks5 17.17s infinite;
   background-color: red;
+  transform: rotate(360);
+  transform-origin: 0px 0px;
+  transition: transform 5s ease; 
 }
 @keyframes geeks5 {
-0% {
-margin-left: 0%;
+  0% {
+
+     
+transform: rotate(90deg); 
+}
+
+41% {
+
+
+transform: rotate(90deg); 
+}
+
+41.18% {
+
+transform: rotate(90deg); 
+
+}
+
+42.681260946% {
+transform-origin: 0px 0px;
+transform: rotate(-25deg); 
+
 }
 
 50% {
-margin-left: 0%;
+  transform: rotate(1000deg); 
+}
+
+60% {
+  transform: rotate(60deg); 
+}
+
+63% {
+  transform: rotate(80deg); 
 }
 
 100% {
-margin-left: 0%;}
+transform: rotate(90deg); 
+}
 }
   	
 .leg {
